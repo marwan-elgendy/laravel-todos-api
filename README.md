@@ -1,2 +1,44 @@
 # Introduction
-This is an API developed with laravel for a Todo Application.
+This is an API developed with laravel for a Todo Application. it performs basic CRUD operations.
+This API has been tested using [Postman](https://www.postman.com/).
+you can use the following routes to work with it:
+- **Get All Todos** (GET Request) `http://host:port/api/todos`
+- **Show a Single Todo** (GET Request) `http://host:port/api/todos/id` 
+- **Create a Todo** (POST Request) `http://host:port/api/todos`
+- **Update a Todo** (PUT Request) `http://host:port/api/todos/id` 
+- **Delete a Todo** (DELETE Request) `http://host:port/api/todos/id` 
+
+## Installation
+
+Please check the official laravel installation guide for server requirements before you start. [Official Documentation](https://laravel.com/docs/8.x/installation)
+
+
+Clone the repository
+
+    git clone https://github.com/marwan-elgendy/laravel-todos-api.git
+
+Switch to the repo folder
+
+    cd laravel-todos-api
+
+Install all the dependencies using composer
+
+    composer install
+
+Copy the example env file and make the required configuration changes in the .env file
+
+    cp .env.example .env
+
+Generate a new application key
+
+    php artisan key:generate
+
+Run the database migrations (**Set the database connection in .env before migrating**)
+
+    php artisan migrate
+
+Start the local development server
+
+    php artisan serve
+
+You can now access the server at http://localhost:8000

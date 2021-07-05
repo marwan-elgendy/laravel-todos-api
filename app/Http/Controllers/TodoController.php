@@ -68,7 +68,7 @@ class TodoController extends Controller
      */
     public function destroy(Todo $todo)
     {
-        // Delete a Todo
-        return $todo->delete();
+            // Delete a Todo
+            return $todo->delete();
     }
 }
